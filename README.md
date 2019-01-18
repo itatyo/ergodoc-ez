@@ -1,4 +1,4 @@
-# ergodoc-ez
+# ergodox-ez
 
 ## Build Command
 ```
