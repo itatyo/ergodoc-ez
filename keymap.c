@@ -17,10 +17,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * | Esc    |   1  |   2  |   3  |   4  |   5  | CGL  |           | CGR  |   6  |   7  |   8  |   9  |   0  |   -    |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * | TAB    |   Q  |   W  |   E  |   R  |   T  |  L1  |           |  L1  |   Y  |   U  |   I  |   O  |   P  |   \    |
+ * | TAB    |   Q  |   W  |   E  |   R  |   T  | AltF4|           |  L1  |   Y  |   U  |   I  |   O  |   P  |   \    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * | LCTRL  |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |; / L2|' / Cmd |
- * |--------+------+------+------+------+------| AltF4|           | CAD  |------+------+------+------+------+--------|
+ * |--------+------+------+------+------+------|  CAA |           | CAD  |------+------+------+------+------+--------|
  * | LShift |Z/Ctrl|   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |//Ctrl| RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *   |Grv/L1|  '"  |AltShf| L1   | F13  |                                       |  F14 | L1   |   [  |   ]  |   =  |
@@ -36,9 +36,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT_ergodox(
   // left hand
   KC_ESC,          KC_1,        KC_2,          KC_3,    KC_4,    KC_5,    LCTL(LGUI(KC_LEFT)),
-  KC_TAB,          KC_Q,        KC_W,          KC_E,    KC_R,    KC_T,    MO(SYMB),
+  KC_TAB,          KC_Q,        KC_W,          KC_E,    KC_R,    KC_T,    LALT(KC_F4),
   KC_LCTRL,        KC_A,        KC_S,          KC_D,    KC_F,    KC_G,
-  KC_LSFT,         CTL_T(KC_Z), KC_X,          KC_C,    KC_V,    KC_B,    LALT(KC_F4),
+  KC_LSFT,         CTL_T(KC_Z), KC_X,          KC_C,    KC_V,    KC_B,    LALT(LCTL(KC_A)),
   LT(SYMB,KC_GRV), KC_QUOT,     LALT(KC_LSFT), MO(SYMB),KC_F13,
                                                            ALT_T(KC_APP), KC_LGUI,
                                                                           KC_HOME,
